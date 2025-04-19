@@ -1,0 +1,965 @@
+2025-04-20 00:00:30 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-20 00:00:30 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-20 00:00:30 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-04-20 00:00:30 DEBUG o.s.web.servlet.DispatcherServlet - Detected CookieLocaleResolver
+2025-04-20 00:00:30 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-04-20 00:00:30 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@67770616
+2025-04-20 00:00:30 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@2e6663d9
+2025-04-20 00:00:30 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-04-20 00:00:30 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2025-04-20 00:00:30 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/categories", parameters={}
+2025-04-20 00:00:30 DEBUG o.s.web.servlet.DispatcherServlet - GET "/users/6", parameters={}
+2025-04-20 00:00:30 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/cart/user/6", parameters={}
+2025-04-20 00:00:30 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CategoryController#getCategories()
+2025-04-20 00:00:30 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CartController#getUserCart(int)
+2025-04-20 00:00:30 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#getUserDetails(Integer)
+2025-04-20 00:00:30 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/translations?lang=en", parameters={masked}
+2025-04-20 00:00:30 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.TranslationController#getTranslations(String)
+2025-04-20 00:00:30 INFO  com.example.service.UserServiceImpl - Fetching details for user ID: 6
+2025-04-20 00:00:30 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:00:30 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{categories=Categories, logout=Logout, products=Products, contact=Contact, orders=Orders, home=Home}]
+2025-04-20 00:00:30 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:00:30 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/translations?lang=en", parameters={masked}
+2025-04-20 00:00:30 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.TranslationController#getTranslations(String)
+2025-04-20 00:00:30 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:00:30 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{categories=Categories, logout=Logout, products=Products, contact=Contact, orders=Orders, home=Home}]
+2025-04-20 00:00:30 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:00:30 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/translations?lang=en", parameters={masked}
+2025-04-20 00:00:30 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.TranslationController#getTranslations(String)
+2025-04-20 00:00:30 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:00:30 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{categories=Categories, logout=Logout, products=Products, contact=Contact, orders=Orders, home=Home}]
+2025-04-20 00:00:30 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:00:30 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/translations?lang=en", parameters={masked}
+2025-04-20 00:00:30 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.TranslationController#getTranslations(String)
+2025-04-20 00:00:30 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:00:30 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{categories=Categories, logout=Logout, products=Products, contact=Contact, orders=Orders, home=Home}]
+2025-04-20 00:00:30 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:00:30 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:00:30 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:00:31 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0
+2025-04-20 00:00:31 DEBUG org.hibernate.SQL - select c1_0.cart_id,c1_0.product_id,c1_0.quantity,c1_0.user_id from cart c1_0 where c1_0.user_id=?
+2025-04-20 00:00:31 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:00:31 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.entity.Categories@4370c3e3, com.example.entity.Categories@33b0bb33, com.example.entity. (truncated)...]
+2025-04-20 00:00:31 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:00:31 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.example.entity.User@1f274919]
+2025-04-20 00:00:31 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:00:31 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:00:31 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:00:31 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/categories", parameters={}
+2025-04-20 00:00:31 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.entity.Cart@39fae035]]
+2025-04-20 00:00:31 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CategoryController#getCategories()
+2025-04-20 00:00:31 DEBUG org.hibernate.SQL - select p1_0.product_id,p1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,p1_0.description,p1_0.price,p1_0.product_name,p1_0.product_url,p1_0.stock,p1_0.sub_subcategory_id,p1_0.subcategory_id,s1_0.subcategory_id,s1_0.category_id,c2_0.category_id,c2_0.category_name,c2_0.image_url,s1_0.images,s1_0.subcategory_name from products p1_0 join categories c1_0 on c1_0.category_id=p1_0.category_id join subcategories s1_0 on s1_0.subcategory_id=p1_0.subcategory_id left join categories c2_0 on c2_0.category_id=s1_0.category_id where p1_0.product_id=?
+2025-04-20 00:00:31 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0
+2025-04-20 00:00:31 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:00:31 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.entity.Categories@155adc0b, com.example.entity.Categories@1f3150a7, com.example.entity. (truncated)...]
+2025-04-20 00:00:31 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:00:31 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:00:42 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/products", parameters={}
+2025-04-20 00:00:42 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.ProductController#getAllProducts()
+2025-04-20 00:00:42 DEBUG o.s.web.servlet.DispatcherServlet - GET "/users/6", parameters={}
+2025-04-20 00:00:42 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#getUserDetails(Integer)
+2025-04-20 00:00:42 INFO  com.example.service.UserServiceImpl - Fetching details for user ID: 6
+2025-04-20 00:00:42 DEBUG org.hibernate.SQL - select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.price,p1_0.product_name,p1_0.product_url,p1_0.stock,p1_0.sub_subcategory_id,p1_0.subcategory_id from products p1_0
+2025-04-20 00:00:42 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/supercoins/6", parameters={}
+2025-04-20 00:00:42 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:00:42 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:00:42 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-04-20 00:00:42 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:00:42 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:00:42 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.example.entity.User@348ff02e]
+2025-04-20 00:00:42 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:00:42 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-04-20 00:00:42 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:00:42 DEBUG o.s.web.servlet.DispatcherServlet - GET "/users/6", parameters={}
+2025-04-20 00:00:42 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#getUserDetails(Integer)
+2025-04-20 00:00:42 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:00:42 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/supercoins/6.]
+2025-04-20 00:00:42 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-04-20 00:00:42 INFO  com.example.service.UserServiceImpl - Fetching details for user ID: 6
+2025-04-20 00:00:42 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:00:42 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:00:42 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:00:42 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.example.entity.User@10d446f]
+2025-04-20 00:00:42 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:00:42 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:00:42 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.entity.Product@13df160e, com.example.entity.Product@66461ff5, com.example.entity.Produc (truncated)...]
+2025-04-20 00:00:42 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:00:42 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-04-20 00:00:42 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/products", parameters={}
+2025-04-20 00:00:42 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.ProductController#getAllProducts()
+2025-04-20 00:00:42 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-04-20 00:00:42 DEBUG org.hibernate.SQL - select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.price,p1_0.product_name,p1_0.product_url,p1_0.stock,p1_0.sub_subcategory_id,p1_0.subcategory_id from products p1_0
+2025-04-20 00:00:42 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:00:42 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:00:42 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:00:42 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sun Apr 20 00:00:42 IST 2025, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2025-04-20 00:00:42 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:00:42 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:00:42 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:00:42 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:00:42 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.entity.Product@64d9287, com.example.entity.Product@73ba9aa5, com.example.entity.Product (truncated)...]
+2025-04-20 00:00:42 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:00:42 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/supercoins/6", parameters={}
+2025-04-20 00:00:42 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-04-20 00:00:42 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-04-20 00:00:42 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-04-20 00:00:42 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/supercoins/6.]
+2025-04-20 00:00:42 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-04-20 00:00:42 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-04-20 00:00:42 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-04-20 00:00:42 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:00:42 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sun Apr 20 00:00:42 IST 2025, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2025-04-20 00:00:42 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-04-20 00:01:09 DEBUG o.s.web.servlet.DispatcherServlet - OPTIONS "/api/cart/user/6", parameters={}
+2025-04-20 00:01:09 DEBUG o.s.web.servlet.DispatcherServlet - OPTIONS "/users/6", parameters={}
+2025-04-20 00:01:09 DEBUG o.s.web.servlet.DispatcherServlet - OPTIONS "/api/cart/user/6", parameters={}
+2025-04-20 00:01:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#getUserDetails(Integer)
+2025-04-20 00:01:09 DEBUG o.s.web.servlet.DispatcherServlet - OPTIONS "/users/6", parameters={}
+2025-04-20 00:01:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CartController#getUserCart(int)
+2025-04-20 00:01:09 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CartController#getUserCart(int)
+2025-04-20 00:01:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#getUserDetails(Integer)
+2025-04-20 00:01:09 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:09 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:09 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:09 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.email is null
+2025-04-20 00:01:09 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.email is null
+2025-04-20 00:01:09 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+org.springframework.security.core.userdetails.UsernameNotFoundException: User not found with email: null
+	at com.example.service.CustomUserDetailsService.lambda$loadUserByUsername$0(CustomUserDetailsService.java:23)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.example.service.CustomUserDetailsService.loadUserByUsername(CustomUserDetailsService.java:23)
+	at com.example.entity.JWTAuthenticationFilter.doFilterInternal(JWTAuthenticationFilter.java:51)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-04-20 00:01:09 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-04-20 00:01:09 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+org.springframework.security.core.userdetails.UsernameNotFoundException: User not found with email: null
+	at com.example.service.CustomUserDetailsService.lambda$loadUserByUsername$0(CustomUserDetailsService.java:23)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.example.service.CustomUserDetailsService.loadUserByUsername(CustomUserDetailsService.java:23)
+	at com.example.entity.JWTAuthenticationFilter.doFilterInternal(JWTAuthenticationFilter.java:51)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-04-20 00:01:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-04-20 00:01:09 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-04-20 00:01:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-04-20 00:01:09 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:09 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sun Apr 20 00:01:09 IST 2025, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+2025-04-20 00:01:09 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:09 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sun Apr 20 00:01:09 IST 2025, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+2025-04-20 00:01:09 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 500
+2025-04-20 00:01:09 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 500
+2025-04-20 00:01:09 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.email is null
+2025-04-20 00:01:09 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+org.springframework.security.core.userdetails.UsernameNotFoundException: User not found with email: null
+	at com.example.service.CustomUserDetailsService.lambda$loadUserByUsername$0(CustomUserDetailsService.java:23)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.example.service.CustomUserDetailsService.loadUserByUsername(CustomUserDetailsService.java:23)
+	at com.example.entity.JWTAuthenticationFilter.doFilterInternal(JWTAuthenticationFilter.java:51)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-04-20 00:01:09 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.email is null
+2025-04-20 00:01:09 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-04-20 00:01:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-04-20 00:01:09 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:09 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+org.springframework.security.core.userdetails.UsernameNotFoundException: User not found with email: null
+	at com.example.service.CustomUserDetailsService.lambda$loadUserByUsername$0(CustomUserDetailsService.java:23)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.example.service.CustomUserDetailsService.loadUserByUsername(CustomUserDetailsService.java:23)
+	at com.example.entity.JWTAuthenticationFilter.doFilterInternal(JWTAuthenticationFilter.java:51)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-04-20 00:01:09 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sun Apr 20 00:01:09 IST 2025, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+2025-04-20 00:01:09 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-04-20 00:01:09 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 500
+2025-04-20 00:01:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-04-20 00:01:09 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:09 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sun Apr 20 00:01:09 IST 2025, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+2025-04-20 00:01:09 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 500
+2025-04-20 00:01:11 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/translations?lang=en", parameters={masked}
+2025-04-20 00:01:11 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/products", parameters={}
+2025-04-20 00:01:11 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.TranslationController#getTranslations(String)
+2025-04-20 00:01:11 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.ProductController#getAllProducts()
+2025-04-20 00:01:11 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:11 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{categories=Categories, logout=Logout, products=Products, contact=Contact, orders=Orders, home=Home}]
+2025-04-20 00:01:11 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:11 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/translations?lang=en", parameters={masked}
+2025-04-20 00:01:11 DEBUG org.hibernate.SQL - select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.price,p1_0.product_name,p1_0.product_url,p1_0.stock,p1_0.sub_subcategory_id,p1_0.subcategory_id from products p1_0
+2025-04-20 00:01:11 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.TranslationController#getTranslations(String)
+2025-04-20 00:01:11 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:01:11 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:01:11 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:11 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{categories=Categories, logout=Logout, products=Products, contact=Contact, orders=Orders, home=Home}]
+2025-04-20 00:01:11 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:01:11 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:11 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:01:11 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:01:11 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:11 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.entity.Product@5f6b75f9, com.example.entity.Product@34b8f9d2, com.example.entity.Produc (truncated)...]
+2025-04-20 00:01:11 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:11 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/products", parameters={}
+2025-04-20 00:01:11 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.ProductController#getAllProducts()
+2025-04-20 00:01:11 DEBUG org.hibernate.SQL - select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.price,p1_0.product_name,p1_0.product_url,p1_0.stock,p1_0.sub_subcategory_id,p1_0.subcategory_id from products p1_0
+2025-04-20 00:01:11 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:01:11 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:01:11 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:01:11 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:01:11 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:01:11 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:11 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.entity.Product@3e65122, com.example.entity.Product@62ece641, com.example.entity.Product (truncated)...]
+2025-04-20 00:01:11 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:18 DEBUG o.s.web.servlet.DispatcherServlet - POST "/users/login?email=ashishwadhai2%40gmail.com&password=Ashish%4013", parameters={masked}
+2025-04-20 00:01:18 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#loginUser(String, String)
+2025-04-20 00:01:19 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.email=?
+2025-04-20 00:01:19 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.email=?
+2025-04-20 00:01:19 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:19 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [JwtResponse [token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhc2hpc2h3YWRoYWkyQGdtYWlsLmNvbSIsImlhdCI6MTc0NTA4 (truncated)...]
+2025-04-20 00:01:19 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/cart/user/6", parameters={}
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/users/6", parameters={}
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CartController#getUserCart(int)
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/translations?lang=en", parameters={masked}
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#getUserDetails(Integer)
+2025-04-20 00:01:21 INFO  com.example.service.UserServiceImpl - Fetching details for user ID: 6
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.TranslationController#getTranslations(String)
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/products", parameters={}
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.ProductController#getAllProducts()
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/supercoins/6", parameters={}
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:01:21 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{categories=Categories, logout=Logout, products=Products, contact=Contact, orders=Orders, home=Home}]
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/translations?lang=en", parameters={masked}
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.TranslationController#getTranslations(String)
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.example.entity.User@51ea4084]
+2025-04-20 00:01:21 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{categories=Categories, logout=Logout, products=Products, contact=Contact, orders=Orders, home=Home}]
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/supercoins/6.]
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.price,p1_0.product_name,p1_0.product_url,p1_0.stock,p1_0.sub_subcategory_id,p1_0.subcategory_id from products p1_0
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/users/6", parameters={}
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#getUserDetails(Integer)
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select c1_0.cart_id,c1_0.product_id,c1_0.quantity,c1_0.user_id from cart c1_0 where c1_0.user_id=?
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-04-20 00:01:21 INFO  com.example.service.UserServiceImpl - Fetching details for user ID: 6
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/translations?lang=en", parameters={masked}
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.TranslationController#getTranslations(String)
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{categories=Categories, logout=Logout, products=Products, contact=Contact, orders=Orders, home=Home}]
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.entity.Cart@6db4c4ff]]
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select p1_0.product_id,p1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,p1_0.description,p1_0.price,p1_0.product_name,p1_0.product_url,p1_0.stock,p1_0.sub_subcategory_id,p1_0.subcategory_id,s1_0.subcategory_id,s1_0.category_id,c2_0.category_id,c2_0.category_name,c2_0.image_url,s1_0.images,s1_0.subcategory_name from products p1_0 join categories c1_0 on c1_0.category_id=p1_0.category_id join subcategories s1_0 on s1_0.subcategory_id=p1_0.subcategory_id left join categories c2_0 on c2_0.category_id=s1_0.category_id where p1_0.product_id=?
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/translations?lang=en", parameters={masked}
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sun Apr 20 00:01:21 IST 2025, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.example.entity.User@606a920c]
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.TranslationController#getTranslations(String)
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/users/6", parameters={}
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{categories=Categories, logout=Logout, products=Products, contact=Contact, orders=Orders, home=Home}]
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#getUserDetails(Integer)
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:21 INFO  com.example.service.UserServiceImpl - Fetching details for user ID: 6
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/supercoins/6", parameters={}
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/cart/user/6", parameters={}
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CartController#getUserCart(int)
+2025-04-20 00:01:21 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.example.entity.User@684b1f1d]
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/users/6", parameters={}
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#getUserDetails(Integer)
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.entity.Product@5e498aee, com.example.entity.Product@37fe3372, com.example.entity.Produc (truncated)...]
+2025-04-20 00:01:21 INFO  com.example.service.UserServiceImpl - Fetching details for user ID: 6
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/products", parameters={}
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.ProductController#getAllProducts()
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.price,p1_0.product_name,p1_0.product_url,p1_0.stock,p1_0.sub_subcategory_id,p1_0.subcategory_id from products p1_0
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.example.entity.User@2846bb]
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/users/6", parameters={}
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#getUserDetails(Integer)
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select c1_0.cart_id,c1_0.product_id,c1_0.quantity,c1_0.user_id from cart c1_0 where c1_0.user_id=?
+2025-04-20 00:01:21 INFO  com.example.service.UserServiceImpl - Fetching details for user ID: 6
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:01:21 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/supercoins/6.]
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.entity.Cart@7d17e435]]
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select p1_0.product_id,p1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,p1_0.description,p1_0.price,p1_0.product_name,p1_0.product_url,p1_0.stock,p1_0.sub_subcategory_id,p1_0.subcategory_id,s1_0.subcategory_id,s1_0.category_id,c2_0.category_id,c2_0.category_name,c2_0.image_url,s1_0.images,s1_0.subcategory_name from products p1_0 join categories c1_0 on c1_0.category_id=p1_0.category_id join subcategories s1_0 on s1_0.subcategory_id=p1_0.subcategory_id left join categories c2_0 on c2_0.category_id=s1_0.category_id where p1_0.product_id=?
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.example.entity.User@a32b1cb]
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.entity.Product@653fb9f2, com.example.entity.Product@5ee1e95d, com.example.entity.Produc (truncated)...]
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/users/6", parameters={}
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#getUserDetails(Integer)
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:21 INFO  com.example.service.UserServiceImpl - Fetching details for user ID: 6
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sun Apr 20 00:01:21 IST 2025, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/cart/user/6", parameters={}
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CartController#getUserCart(int)
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.example.entity.User@2728b4e]
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select c1_0.cart_id,c1_0.product_id,c1_0.quantity,c1_0.user_id from cart c1_0 where c1_0.user_id=?
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.entity.Cart@4c666bb6]]
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select p1_0.product_id,p1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,p1_0.description,p1_0.price,p1_0.product_name,p1_0.product_url,p1_0.stock,p1_0.sub_subcategory_id,p1_0.subcategory_id,s1_0.subcategory_id,s1_0.category_id,c2_0.category_id,c2_0.category_name,c2_0.image_url,s1_0.images,s1_0.subcategory_name from products p1_0 join categories c1_0 on c1_0.category_id=p1_0.category_id join subcategories s1_0 on s1_0.subcategory_id=p1_0.subcategory_id left join categories c2_0 on c2_0.category_id=s1_0.category_id where p1_0.product_id=?
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/cart/user/6", parameters={}
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CartController#getUserCart(int)
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select c1_0.cart_id,c1_0.product_id,c1_0.quantity,c1_0.user_id from cart c1_0 where c1_0.user_id=?
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.entity.Cart@28fbb1ae]]
+2025-04-20 00:01:21 DEBUG org.hibernate.SQL - select p1_0.product_id,p1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,p1_0.description,p1_0.price,p1_0.product_name,p1_0.product_url,p1_0.stock,p1_0.sub_subcategory_id,p1_0.subcategory_id,s1_0.subcategory_id,s1_0.category_id,c2_0.category_id,c2_0.category_name,c2_0.image_url,s1_0.images,s1_0.subcategory_name from products p1_0 join categories c1_0 on c1_0.category_id=p1_0.category_id join subcategories s1_0 on s1_0.subcategory_id=p1_0.subcategory_id left join categories c2_0 on c2_0.category_id=s1_0.category_id where p1_0.product_id=?
+2025-04-20 00:01:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:01:27 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/products", parameters={}
+2025-04-20 00:01:27 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.ProductController#getAllProducts()
+2025-04-20 00:01:27 DEBUG org.hibernate.SQL - select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.price,p1_0.product_name,p1_0.product_url,p1_0.stock,p1_0.sub_subcategory_id,p1_0.subcategory_id from products p1_0
+2025-04-20 00:01:27 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:01:27 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:01:27 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:01:27 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:01:27 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:01:27 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:01:27 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.entity.Product@3274b58d, com.example.entity.Product@1ab3d557, com.example.entity.Produc (truncated)...]
+2025-04-20 00:01:27 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:02:19 DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/otp/send?email=pratikkhedkar2000@gmail.com", parameters={masked}
+2025-04-20 00:02:19 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.OTPController#sendOTP(String)
+2025-04-20 00:02:24 DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/otp/send?email=pratikkhedkar2000@gmail.com", parameters={masked}
+2025-04-20 00:02:24 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.OTPController#sendOTP(String)
+2025-04-20 00:02:29 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-04-20 00:02:29 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing ["OTP sent successfully."]
+2025-04-20 00:02:29 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:02:32 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-04-20 00:02:32 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing ["OTP sent successfully."]
+2025-04-20 00:02:32 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:03:14 DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/otp/verify?email=pratikkhedkar2000@gmail.com&otp=974248", parameters={masked}
+2025-04-20 00:03:14 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.OTPController#verifyOTP(String, String)
+2025-04-20 00:03:14 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-04-20 00:03:14 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing ["Invalid OTP."]
+2025-04-20 00:03:14 DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2025-04-20 00:03:30 DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/otp/verify?email=pratikkhedkar2000@gmail.com&otp=670959", parameters={masked}
+2025-04-20 00:03:30 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.OTPController#verifyOTP(String, String)
+2025-04-20 00:03:30 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-04-20 00:03:30 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing ["OTP verified successfully."]
+2025-04-20 00:03:30 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:12 DEBUG o.s.web.servlet.DispatcherServlet - OPTIONS "/users/register", parameters={}
+2025-04-20 00:04:12 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#registerUser(RegisterRequest)
+2025-04-20 00:04:12 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:12 DEBUG o.s.web.servlet.DispatcherServlet - POST "/users/register", parameters={}
+2025-04-20 00:04:12 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#registerUser(RegisterRequest)
+2025-04-20 00:04:12 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.dto.RegisterRequest@220b7ae2]
+2025-04-20 00:04:12 INFO  com.example.service.UserServiceImpl - Registering user with email: pratikkhedkar2000@gmail.com
+2025-04-20 00:04:13 DEBUG org.hibernate.SQL - insert into users (address,credit_card_info,email,internet_banking_info,member,mobile_number,name,password,supercoins) values (?,?,?,?,?,?,?,?,?)
+2025-04-20 00:04:13 INFO  com.example.service.UserServiceImpl - User registered successfully: pratikkhedkar2000@gmail.com
+2025-04-20 00:04:13 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:13 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.example.entity.User@288d227c]
+2025-04-20 00:04:13 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:19 DEBUG o.s.web.servlet.DispatcherServlet - POST "/users/login?email=pratikkhedkar2000%40gmail.com&password=pratik%402000", parameters={masked}
+2025-04-20 00:04:19 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#loginUser(String, String)
+2025-04-20 00:04:19 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.email=?
+2025-04-20 00:04:19 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.email=?
+2025-04-20 00:04:19 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:19 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [JwtResponse [token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwcmF0aWtraGVka2FyMjAwMEBnbWFpbC5jb20iLCJpYXQiOjE3 (truncated)...]
+2025-04-20 00:04:19 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/cart/user/7", parameters={}
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/users/7", parameters={}
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/translations?lang=en", parameters={masked}
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#getUserDetails(Integer)
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.TranslationController#getTranslations(String)
+2025-04-20 00:04:21 INFO  com.example.service.UserServiceImpl - Fetching details for user ID: 7
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{categories=Categories, logout=Logout, products=Products, contact=Contact, orders=Orders, home=Home}]
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/products", parameters={}
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.ProductController#getAllProducts()
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/supercoins/7", parameters={}
+2025-04-20 00:04:21 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.price,p1_0.product_name,p1_0.product_url,p1_0.stock,p1_0.sub_subcategory_id,p1_0.subcategory_id from products p1_0
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CartController#getUserCart(int)
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:04:21 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/supercoins/7.]
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/translations?lang=en", parameters={masked}
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.TranslationController#getTranslations(String)
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sun Apr 20 00:04:21 IST 2025, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.example.entity.User@3f37b5e8]
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.entity.Product@60bbe1b2, com.example.entity.Product@4aaa1153, com.example.entity.Produc (truncated)...]
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select c1_0.cart_id,c1_0.product_id,c1_0.quantity,c1_0.user_id from cart c1_0 where c1_0.user_id=?
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/supercoins/7", parameters={}
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/users/7", parameters={}
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{categories=Categories, logout=Logout, products=Products, contact=Contact, orders=Orders, home=Home}]
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#getUserDetails(Integer)
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/products", parameters={}
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.ProductController#getAllProducts()
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:21 INFO  com.example.service.UserServiceImpl - Fetching details for user ID: 7
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:21 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-04-20 00:04:21 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.price,p1_0.product_name,p1_0.product_url,p1_0.stock,p1_0.sub_subcategory_id,p1_0.subcategory_id from products p1_0
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/supercoins/7.]
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/cart/user/7", parameters={}
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/translations?lang=en", parameters={masked}
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CartController#getUserCart(int)
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sun Apr 20 00:04:21 IST 2025, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.TranslationController#getTranslations(String)
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.example.entity.User@6eaea6c8]
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{categories=Categories, logout=Logout, products=Products, contact=Contact, orders=Orders, home=Home}]
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/users/7", parameters={}
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#getUserDetails(Integer)
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:21 INFO  com.example.service.UserServiceImpl - Fetching details for user ID: 7
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/translations?lang=en", parameters={masked}
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.TranslationController#getTranslations(String)
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{categories=Categories, logout=Logout, products=Products, contact=Contact, orders=Orders, home=Home}]
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select c1_0.cart_id,c1_0.product_id,c1_0.quantity,c1_0.user_id from cart c1_0 where c1_0.user_id=?
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.example.entity.User@20f09ade]
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/users/7", parameters={}
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.entity.Product@2ea665d0, com.example.entity.Product@6f0a1e9, com.example.entity.Product (truncated)...]
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#getUserDetails(Integer)
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-04-20 00:04:21 INFO  com.example.service.UserServiceImpl - Fetching details for user ID: 7
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/cart/user/7", parameters={}
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CartController#getUserCart(int)
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select c1_0.cart_id,c1_0.product_id,c1_0.quantity,c1_0.user_id from cart c1_0 where c1_0.user_id=?
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.example.entity.User@1a6b7f6c]
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/cart/user/7", parameters={}
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/users/7", parameters={}
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#getUserDetails(Integer)
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CartController#getUserCart(int)
+2025-04-20 00:04:21 INFO  com.example.service.UserServiceImpl - Fetching details for user ID: 7
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.example.entity.User@7dc98aa3]
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select c1_0.cart_id,c1_0.product_id,c1_0.quantity,c1_0.user_id from cart c1_0 where c1_0.user_id=?
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - GET "/users/7", parameters={}
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#getUserDetails(Integer)
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:21 INFO  com.example.service.UserServiceImpl - Fetching details for user ID: 7
+2025-04-20 00:04:21 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:21 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.example.entity.User@100bf184]
+2025-04-20 00:04:21 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:37 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/categories", parameters={}
+2025-04-20 00:04:37 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CategoryController#getCategories()
+2025-04-20 00:04:37 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0
+2025-04-20 00:04:37 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:37 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.entity.Categories@5bbbb0c5, com.example.entity.Categories@72a30717, com.example.entity. (truncated)...]
+2025-04-20 00:04:37 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:37 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/categories", parameters={}
+2025-04-20 00:04:37 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CategoryController#getCategories()
+2025-04-20 00:04:37 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0
+2025-04-20 00:04:37 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:37 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.entity.Categories@40712a5a, com.example.entity.Categories@7bb525a9, com.example.entity. (truncated)...]
+2025-04-20 00:04:37 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:39 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/subcategories/category/3", parameters={}
+2025-04-20 00:04:39 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.SubcategoryController#getSubcategoriesByCategoryId(int)
+2025-04-20 00:04:39 DEBUG org.hibernate.SQL - SELECT * FROM subcategories WHERE category_id = ?
+2025-04-20 00:04:39 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:04:39 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:39 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.entity.Subcategories@5c4e4172, com.example.entity.Subcategories@595eafac]]
+2025-04-20 00:04:39 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:39 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/subcategories/category/3", parameters={}
+2025-04-20 00:04:39 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.SubcategoryController#getSubcategoriesByCategoryId(int)
+2025-04-20 00:04:39 DEBUG org.hibernate.SQL - SELECT * FROM subcategories WHERE category_id = ?
+2025-04-20 00:04:39 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:04:39 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:39 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.entity.Subcategories@d3a88ea, com.example.entity.Subcategories@57373957]]
+2025-04-20 00:04:39 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:45 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/categories", parameters={}
+2025-04-20 00:04:45 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CategoryController#getCategories()
+2025-04-20 00:04:45 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0
+2025-04-20 00:04:45 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:45 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.entity.Categories@6668eedf, com.example.entity.Categories@665f8dc, com.example.entity.C (truncated)...]
+2025-04-20 00:04:45 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:45 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/categories", parameters={}
+2025-04-20 00:04:45 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CategoryController#getCategories()
+2025-04-20 00:04:45 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0
+2025-04-20 00:04:45 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:45 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.entity.Categories@57190c5e, com.example.entity.Categories@511160b8, com.example.entity. (truncated)...]
+2025-04-20 00:04:45 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:47 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/subcategories/category/4", parameters={}
+2025-04-20 00:04:47 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.SubcategoryController#getSubcategoriesByCategoryId(int)
+2025-04-20 00:04:47 DEBUG org.hibernate.SQL - SELECT * FROM subcategories WHERE category_id = ?
+2025-04-20 00:04:47 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:04:47 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:47 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.entity.Subcategories@405f239b, com.example.entity.Subcategories@49360b59]]
+2025-04-20 00:04:47 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:47 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/subcategories/category/4", parameters={}
+2025-04-20 00:04:47 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.SubcategoryController#getSubcategoriesByCategoryId(int)
+2025-04-20 00:04:47 DEBUG org.hibernate.SQL - SELECT * FROM subcategories WHERE category_id = ?
+2025-04-20 00:04:47 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:04:47 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:47 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.entity.Subcategories@7435c6a2, com.example.entity.Subcategories@5965779a]]
+2025-04-20 00:04:47 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:49 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/subsubcategories/8", parameters={}
+2025-04-20 00:04:49 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.SubSubcategoryController#getSubSubcategoryById(int)
+2025-04-20 00:04:49 DEBUG org.hibernate.SQL - select ss1_0.sub_subcategory_id,ss1_0.images,ss1_0.sub_subcategory_name,ss1_0.subcategory_id,s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from sub_subcategories ss1_0 join subcategories s1_0 on s1_0.subcategory_id=ss1_0.subcategory_id left join categories c1_0 on c1_0.category_id=s1_0.category_id where ss1_0.sub_subcategory_id=?
+2025-04-20 00:04:49 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:49 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Nothing to write: null body
+2025-04-20 00:04:49 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:49 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/subsubcategories/8", parameters={}
+2025-04-20 00:04:49 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.SubSubcategoryController#getSubSubcategoryById(int)
+2025-04-20 00:04:49 DEBUG org.hibernate.SQL - select ss1_0.sub_subcategory_id,ss1_0.images,ss1_0.sub_subcategory_name,ss1_0.subcategory_id,s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from sub_subcategories ss1_0 join subcategories s1_0 on s1_0.subcategory_id=ss1_0.subcategory_id left join categories c1_0 on c1_0.category_id=s1_0.category_id where ss1_0.sub_subcategory_id=?
+2025-04-20 00:04:49 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:49 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Nothing to write: null body
+2025-04-20 00:04:49 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:52 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/subcategories/category/4", parameters={}
+2025-04-20 00:04:52 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.SubcategoryController#getSubcategoriesByCategoryId(int)
+2025-04-20 00:04:52 DEBUG org.hibernate.SQL - SELECT * FROM subcategories WHERE category_id = ?
+2025-04-20 00:04:52 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:04:52 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:52 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.entity.Subcategories@5760c114, com.example.entity.Subcategories@4e019ad5]]
+2025-04-20 00:04:52 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:52 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/subcategories/category/4", parameters={}
+2025-04-20 00:04:52 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.SubcategoryController#getSubcategoriesByCategoryId(int)
+2025-04-20 00:04:52 DEBUG org.hibernate.SQL - SELECT * FROM subcategories WHERE category_id = ?
+2025-04-20 00:04:52 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:04:52 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:52 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.entity.Subcategories@3affb163, com.example.entity.Subcategories@34ca3d64]]
+2025-04-20 00:04:52 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:53 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/categories", parameters={}
+2025-04-20 00:04:53 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CategoryController#getCategories()
+2025-04-20 00:04:53 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0
+2025-04-20 00:04:53 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:53 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.entity.Categories@1216a250, com.example.entity.Categories@56d18a87, com.example.entity. (truncated)...]
+2025-04-20 00:04:53 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:04:53 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/categories", parameters={}
+2025-04-20 00:04:53 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CategoryController#getCategories()
+2025-04-20 00:04:53 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0
+2025-04-20 00:04:53 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:04:53 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.entity.Categories@3730932e, com.example.entity.Categories@62cc7aa, com.example.entity.C (truncated)...]
+2025-04-20 00:04:53 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:05:05 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/subcategories/category/6", parameters={}
+2025-04-20 00:05:05 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.SubcategoryController#getSubcategoriesByCategoryId(int)
+2025-04-20 00:05:05 DEBUG org.hibernate.SQL - SELECT * FROM subcategories WHERE category_id = ?
+2025-04-20 00:05:05 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:05:05 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-04-20 00:05:05 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:05:05 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/subcategories/category/6", parameters={}
+2025-04-20 00:05:05 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.SubcategoryController#getSubcategoriesByCategoryId(int)
+2025-04-20 00:05:05 DEBUG org.hibernate.SQL - SELECT * FROM subcategories WHERE category_id = ?
+2025-04-20 00:05:05 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:05:05 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-04-20 00:05:05 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:05:08 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/categories", parameters={}
+2025-04-20 00:05:08 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CategoryController#getCategories()
+2025-04-20 00:05:08 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0
+2025-04-20 00:05:08 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:05:08 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.entity.Categories@7b997d2a, com.example.entity.Categories@75c0fa62, com.example.entity. (truncated)...]
+2025-04-20 00:05:08 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:05:08 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/categories", parameters={}
+2025-04-20 00:05:08 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CategoryController#getCategories()
+2025-04-20 00:05:08 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0
+2025-04-20 00:05:08 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:05:08 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.entity.Categories@57f6ad9f, com.example.entity.Categories@529ba680, com.example.entity. (truncated)...]
+2025-04-20 00:05:08 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/products", parameters={}
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.ProductController#getAllProducts()
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/cart/user/7", parameters={}
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - GET "/users/7", parameters={}
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CartController#getUserCart(int)
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/supercoins/7", parameters={}
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#getUserDetails(Integer)
+2025-04-20 00:05:09 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/translations?lang=en", parameters={masked}
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.TranslationController#getTranslations(String)
+2025-04-20 00:05:09 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:05:09 DEBUG org.hibernate.SQL - select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.price,p1_0.product_name,p1_0.product_url,p1_0.stock,p1_0.sub_subcategory_id,p1_0.subcategory_id from products p1_0
+2025-04-20 00:05:09 INFO  com.example.service.UserServiceImpl - Fetching details for user ID: 7
+2025-04-20 00:05:09 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:05:09 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:05:09 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{categories=Categories, logout=Logout, products=Products, contact=Contact, orders=Orders, home=Home}]
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.example.entity.User@733f942e]
+2025-04-20 00:05:09 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:05:09 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-04-20 00:05:09 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/supercoins/7.]
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - GET "/users/7", parameters={}
+2025-04-20 00:05:09 DEBUG org.hibernate.SQL - select c1_0.cart_id,c1_0.product_id,c1_0.quantity,c1_0.user_id from cart c1_0 where c1_0.user_id=?
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#getUserDetails(Integer)
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:05:09 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:05:09 INFO  com.example.service.UserServiceImpl - Fetching details for user ID: 7
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/translations?lang=en", parameters={masked}
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.TranslationController#getTranslations(String)
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.entity.Product@4334a363, com.example.entity.Product@2d45fea4, com.example.entity.Produc (truncated)...]
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/cart/user/7", parameters={}
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sun Apr 20 00:05:09 IST 2025, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.CartController#getUserCart(int)
+2025-04-20 00:05:09 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/products", parameters={}
+2025-04-20 00:05:09 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.ProductController#getAllProducts()
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{categories=Categories, logout=Logout, products=Products, contact=Contact, orders=Orders, home=Home}]
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/supercoins/7", parameters={}
+2025-04-20 00:05:09 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-04-20 00:05:09 DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/supercoins/7.]
+2025-04-20 00:05:09 DEBUG org.hibernate.SQL - select c1_0.cart_id,c1_0.product_id,c1_0.quantity,c1_0.user_id from cart c1_0 where c1_0.user_id=?
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[]]
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.example.entity.User@481336e5]
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sun Apr 20 00:05:09 IST 2025, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2025-04-20 00:05:09 DEBUG org.hibernate.SQL - select p1_0.product_id,p1_0.category_id,p1_0.description,p1_0.price,p1_0.product_name,p1_0.product_url,p1_0.stock,p1_0.sub_subcategory_id,p1_0.subcategory_id from products p1_0
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:05:09 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - GET "/users/7", parameters={}
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#getUserDetails(Integer)
+2025-04-20 00:05:09 INFO  com.example.service.UserServiceImpl - Fetching details for user ID: 7
+2025-04-20 00:05:09 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:05:09 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.example.entity.User@126552]
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:05:09 DEBUG org.hibernate.SQL - select c1_0.category_id,c1_0.category_name,c1_0.image_url from categories c1_0 where c1_0.category_id=?
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - GET "/users/7", parameters={}
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.controller.UserController#getUserDetails(Integer)
+2025-04-20 00:05:09 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:05:09 INFO  com.example.service.UserServiceImpl - Fetching details for user ID: 7
+2025-04-20 00:05:09 DEBUG org.hibernate.SQL - select u1_0.user_id,u1_0.address,u1_0.credit_card_info,u1_0.email,u1_0.internet_banking_info,u1_0.member,u1_0.mobile_number,u1_0.name,u1_0.password,u1_0.supercoins from users u1_0 where u1_0.user_id=?
+2025-04-20 00:05:09 DEBUG org.hibernate.SQL - select s1_0.subcategory_id,s1_0.category_id,c1_0.category_id,c1_0.category_name,c1_0.image_url,s1_0.images,s1_0.subcategory_name from subcategories s1_0 join categories c1_0 on c1_0.category_id=s1_0.category_id where s1_0.subcategory_id=?
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [com.example.entity.User@f0644fb]
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-04-20 00:05:09 DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.entity.Product@756f4365, com.example.entity.Product@51ac0ea5, com.example.entity.Produc (truncated)...]
+2025-04-20 00:05:09 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
